@@ -1,0 +1,32 @@
+service: serverless-basic-graphql
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${opt:stage, 'dev'}
+  region: ap-southeast-1
+
+functions:
+  graphql:
+    handler: src/handler.graphql
+    events:
+      - http:
+          path: /graphql
+          method: post
+          cors: true
+      - http:
+          path: /graphql
+          method: get
+          cors: true
+          
+  defaultGraphql:
+    handler: src/handler.defaultGraphql
+    events:
+      - http:
+          path: /defaultGraphql
+          method: post
+          cors: true
+      - http:
+          path: /defaultGraphql
+          method: get
+          cors: true
