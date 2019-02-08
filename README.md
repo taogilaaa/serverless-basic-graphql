@@ -1,6 +1,6 @@
 # serverless-basic-graphql
 
-Sample: https://if26uj17qd.execute-api.ap-southeast-1.amazonaws.com/dev/graphql
+Sample: https://p8c87nunv8.execute-api.ap-southeast-1.amazonaws.com/dev/graphql
 
 ## Get started
 
