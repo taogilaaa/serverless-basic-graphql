@@ -10,7 +10,15 @@ Sample: https://p8c87nunv8.execute-api.ap-southeast-1.amazonaws.com/dev/graphql
 
 ```sh
 yarn install # or npm install
-yarn start   # or npm start
+```
+
+**Run Locally**
+```sh
+yarn serve   # or npm run serve
+
+# or
+
+npx serverless offline start
 ```
 
 **Deployment:**
